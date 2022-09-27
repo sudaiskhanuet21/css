@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+          box-sizing: border-box;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            margin: 34px auto;
+            background-color: rgb(134, 185, 185);
+        }
+        .item{
+              border: 3px solid rgb(250, 5, 5);
+              padding: 12px 3px;
+              margin: 12px 3px;
+              background-color: rgb(229, 219, 247);
+
+        }
+        #fruit{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: right;
+            width: 48%;
+        }
+        #stationary{
+            /* float: left; */
+            /* clear: left;that to don't disturb left float stationary box */
+            /* clear: right;to don't disturb right box the stationary box */
+            clear: both;
+            width: 100%;
+        }
+        p, h3{
+            text-align: right;
+            text-align: left;
+            text-align: center;
+            text-align: justify;
+        }
+        h1{
+            text-align: center;
+            margin: 44px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>THIS IS MY STORE</h1>
+        <div id="fruit" class="item">
+            <h3>fruite</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sint commodi sed adipisci facilis perferendis? Soluta sint commodi doloremque nisi, impedit veniam nobis, eaque, quaerat magni mollitia voluptates rem ullam.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque voluptatem voluptatum deleniti atque laudantium temporibus harum animi, quas velit nam at, amet placeat! Itaque, eveniet omnis? Fuga error eum tempore?</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia rerum distinctio similique aut quasi nesciunt corporis architecto dolorum blanditiis repellat culpa ipsum quam quaerat assumenda voluptatibus doloremque, suscipit sunt fuga.</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>stationary</h3>
+            <p id="glassesypara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia rerum distinctio similique aut quasi nesciunt corporis architecto dolorum blanditiis repellat culpa ipsum quam quaerat assumenda voluptatibus doloremque, suscipit sunt fuga.</p>
+        </div>
+    </div>
+</body>
+</html>
