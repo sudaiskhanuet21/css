@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation menue</title>
+    <style>
+    .navbar{
+        background-color: black;
+        border-radius: 16px;
+    }
+    .navbar ul{
+        overflow: auto;
+    }
+           
+    .navbar li{ /*float overflow parent so for that we set auto overflow*/
+        float:left;
+        list-style: none;
+        margin: 13px 20px;
+        padding: 12px 2px;
+
+    }
+    .navbar li a{
+        padding: 7px 3px;
+        
+        color: white;
+        text-decoration: none;
+    }
+    .search{
+        float: right;
+        padding: 15px 75px;
+        color:white;
+        
+    }
+    .navbar input{
+        border: 2px solid red;
+        border-radius: 9px;
+        padding: 8px 8px;
+        width: 150px;
+    }
+    .navbar li a:hover{
+                color: blue;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>
